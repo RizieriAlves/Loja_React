@@ -1,0 +1,22 @@
+.categoria {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+}
+
+.categoria div {
+  flex-wrap: wrap;
+}
+
+.itens {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 25px;
+}
+
+.categoria div div {
+  width: 30%;
+}

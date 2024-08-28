@@ -1,0 +1,218 @@
+{
+  "itens": [
+    {
+      "id": 1,
+      "categoria": "Lanches",
+      "visible": true,
+      "name": "Bacon Duplo",
+      "price": 30,
+      "foto": "baconduplo.jpg",
+      "descricao": "Pão americano, blend 150g, queijo cheddar, bacon duplo, alface, tomate e molho especial + 100g de batata."
+    },
+    {
+      "id": 2,
+      "categoria": "Lanches",
+      "visible": false,
+      "name": "Filé",
+      "price": 35,
+      "foto": "file.jpg",
+      "descricao": "Pão americano, 200g Filé Mignon, ovo, queijo cheddar duplo, bacon, alface, tomate e molho especial + 100g de batata."
+    },
+    {
+      "id": 3,
+      "categoria": "Lanches",
+      "visible": true,
+      "name": "Supremo",
+      "price": 32,
+      "foto": "supremo.jpg",
+      "descricao": "Pão americano, blend 150g, frango, queijo cheddar, bacon, alface, cebola, tomate e molho especial + 100g de batata."
+    },
+    {
+      "id": 4,
+      "categoria": "Lanches",
+      "visible": true,
+      "name": "Veggie",
+      "price": 28,
+      "foto": "veggie.jpg",
+      "descricao": "Pão integral, hambúrguer de grão-de-bico, queijo vegano, alface, tomate e molho especial + 100g de batata."
+    },
+    {
+      "id": 8,
+      "categoria": "Refrigerantes",
+      "visible": true,
+      "name": "Coca-Cola 350ml",
+      "price": 5,
+      "foto": "cocacola350.jpg",
+      "descricao": "Refrigerante de Cola, trincando de gelado."
+    },
+    {
+      "id": 10,
+      "categoria": "Refrigerantes",
+      "visible": true,
+      "name": "Guaraná antarctica 350ml",
+      "price": 4,
+      "foto": "guaranaantarctica.jpg",
+      "descricao": "O guaraná mais famoso do Brasil, trincando de gelado."
+    },
+    {
+      "id": 11,
+      "categoria": "Refrigerantes",
+      "visible": true,
+      "name": "Fanta Laranja 350ml",
+      "price": 5,
+      "foto": "fanta.jpg",
+      "descricao": "Refrigerante sabor laranja, refrescante e delicioso."
+    },
+    {
+      "id": 12,
+      "categoria": "Sobremesas",
+      "visible": true,
+      "name": "Brownie",
+      "price": 8,
+      "foto": "brownie.jpg",
+      "descricao": "Delicioso brownie de chocolate com nozes."
+    },
+    {
+      "id": 13,
+      "categoria": "Sobremesas",
+      "visible": true,
+      "name": "Cheesecake",
+      "price": 10,
+      "foto": "cheesecake.jpg",
+      "descricao": "Cheesecake cremoso com calda de frutas vermelhas."
+    },
+    {
+      "id": 14,
+      "categoria": "Aperitivos",
+      "visible": true,
+      "name": "Nachos",
+      "price": 12,
+      "foto": "nachos.jpg",
+      "descricao": "Tortilhas de milho com queijo derretido e guacamole."
+    },
+    {
+      "id": 15,
+      "categoria": "Aperitivos",
+      "visible": true,
+      "name": "Aipim Frito",
+      "price": 10,
+      "foto": "aipimfrito.jpg",
+      "descricao": "Aipim crocante frito, servido com molho picante."
+    }
+  ],
+  "pedidos": [
+    {
+      "id": 1,
+      "exclusive_id": 1724797099143,
+      "cliente": {
+        "nome": "Vinicius Rizieri Alves",
+        "telefone": "17996287444",
+        "cidade": "São José do Rio Preto",
+        "bairro": "Parque Industrial",
+        "Rua": "Professor Alvaro Duarte de Almeida",
+        "Numero": "745"
+      },
+      "pedido": {
+        "preco": 213,
+        "itens": [
+          {
+            "id": 4,
+            "categoria": "Lanches",
+            "name": "Veggie",
+            "price": 28
+          },
+          {
+            "id": 4,
+            "categoria": "Lanches",
+            "name": "Veggie",
+            "price": 28
+          },
+          {
+            "id": 1,
+            "categoria": "Lanches",
+            "name": "Bacon Duplo",
+            "price": 30
+          },
+          {
+            "id": 8,
+            "categoria": "Refrigerantes",
+            "name": "Coca-Cola 350ml",
+            "price": 5
+          },
+          {
+            "id": 4,
+            "categoria": "Lanches",
+            "name": "Veggie",
+            "price": 28
+          },
+          {
+            "id": 4,
+            "categoria": "Lanches",
+            "name": "Veggie",
+            "price": 28
+          },
+          {
+            "id": 4,
+            "categoria": "Lanches",
+            "name": "Veggie",
+            "price": 28
+          },
+          {
+            "id": 4,
+            "categoria": "Lanches",
+            "name": "Veggie",
+            "price": 28
+          },
+          {
+            "id": 8,
+            "categoria": "Refrigerantes",
+            "name": "Coca-Cola 350ml",
+            "price": 5
+          },
+          {
+            "id": 8,
+            "categoria": "Refrigerantes",
+            "name": "Coca-Cola 350ml",
+            "price": 5
+          }
+        ]
+      }
+    },
+    {
+      "id": 1,
+      "exclusive_id": 1724799984064,
+      "cliente": {
+        "nome": "Vinicius'",
+        "telefone": "1788885555",
+        "cidade": "São José do Rio Preto",
+        "bairro": "Parque Industrial ",
+        "Rua": "Rua PRofessor",
+        "Numero": "555"
+      },
+      "pedido": {
+        "preco": 90,
+        "troco": 100,
+        "itens": [
+          {
+            "id": 1,
+            "categoria": "Lanches",
+            "name": "Bacon Duplo",
+            "price": 30
+          },
+          {
+            "id": 3,
+            "categoria": "Lanches",
+            "name": "Supremo",
+            "price": 32
+          },
+          {
+            "id": 4,
+            "categoria": "Lanches",
+            "name": "Veggie",
+            "price": 28
+          }
+        ]
+      }
+    }
+  ]
+}
