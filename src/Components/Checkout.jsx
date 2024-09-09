@@ -194,7 +194,7 @@ function Checkout({
             {pagamento == "dinheiro" ? <Troco setTroco={setTroco} /> : null}
           </label>
 
-          <button>Finalizar pedido</button>
+          <button className={styles.sendbutton}>Finalizar pedido</button>
         </form>
       </div>
     </div>

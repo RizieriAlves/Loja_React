@@ -66,11 +66,14 @@ h1 {
   text-align: center;
 }
 
-button {
+.sendbutton {
   display: block;
-  margin: auto;
+  margin: 20px auto;
   width: 300px;
-  margin-top: 20px;
+  padding: 5px;
+  background-color: rgba(248, 35, 35, 0.813);
+  font-size: 20px;
+  border-radius: 5px;
 }
 
 input {

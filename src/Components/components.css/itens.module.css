@@ -17,12 +17,3 @@
   align-items: flex-start;
   text-align: left;
 }
-button {
-  display: block;
-  align-self: flex-start;
-  width: 100px;
-  padding: 5px;
-  background-color: rgba(248, 35, 35, 0.813);
-  font-size: 20px;
-  border-radius: 5px;
-}

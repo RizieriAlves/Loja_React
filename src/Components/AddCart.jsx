@@ -1,6 +1,8 @@
+import styles from "./components.css/AddCart.module.css";
+
 function AddCart({ id, name, price, onClick }) {
   return (
-    <button onClick={onClick} name={name} key={id}>
+    <button className={styles.addcart} onClick={onClick} name={name} key={id}>
       R${price}
     </button>
   );
