@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.091fac50.css",
+    "main.js": "/static/js/main.f3ccc8e4.js",
+    "static/media/cheesecake.jpg": "/static/media/cheesecake.2c800e0009f669e0316d.jpg",
+    "static/media/aipimfrito.jpg": "/static/media/aipimfrito.6929d0b572f78a483f04.jpg",
+    "static/media/nachos.jpg": "/static/media/nachos.18b3b7db1f2320c1ccca.jpg",
+    "static/media/veggie.jpg": "/static/media/veggie.3d244218746ba8701f82.jpg",
+    "static/media/brownie.jpg": "/static/media/brownie.b5b93eda32dde62723d9.jpg",
+    "static/media/supremo.jpg": "/static/media/supremo.388e051549e7ef6c0c0f.jpg",
+    "static/media/file.jpg": "/static/media/file.f7919d5f6a25a7327228.jpg",
+    "static/media/baconduplo.jpg": "/static/media/baconduplo.3cb9b115f945e22b8c8c.jpg",
+    "static/media/guaranaantarctica.jpg": "/static/media/guaranaantarctica.ebe9245bae2268ad6262.jpg",
+    "static/media/cocacola350.jpg": "/static/media/cocacola350.7076b14612f39f4975cb.jpg",
+    "static/media/fanta.jpg": "/static/media/fanta.582f51c20898b89a9e30.jpg",
+    "index.html": "/index.html",
+    "main.091fac50.css.map": "/static/css/main.091fac50.css.map",
+    "main.f3ccc8e4.js.map": "/static/js/main.f3ccc8e4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.091fac50.css",
+    "static/js/main.f3ccc8e4.js"
+  ]
+}
