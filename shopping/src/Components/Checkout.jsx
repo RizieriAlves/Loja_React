@@ -35,7 +35,7 @@ function Checkout({
   async function concluirpedido(e) {
     e.preventDefault();
 
-    let response = await fetch("http://localhost:5000/pedidos/");
+    let response = await fetch("http://localhost:5000/now/");
     let pedidos = await response.json();
 
     let ids = await Object.keys(pedidos).map(Number);
@@ -61,11 +61,12 @@ function Checkout({
           categoria: item.categoria,
           name: item.name,
           price: item.price,
+          payment: pagamento,
         })),
       },
     };
 
-    await fetch("http://localhost:5000/pedidos/", {
+    await fetch("http://localhost:5000/now/", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(pedido),

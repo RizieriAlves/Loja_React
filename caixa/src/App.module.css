@@ -1,0 +1,9 @@
+.container {
+  background-color: bisque;
+  width: 80%;
+  margin: auto;
+  min-height: 80vh;
+  border-radius: 30px;
+  padding: 30px;
+  gap: 2em;
+}

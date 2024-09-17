@@ -3,7 +3,6 @@ import React from "react";
 function Troco({ setTroco }) {
   return (
     <>
-      {" "}
       <p>Troco para:</p>
       <input
         style={{ width: "100px" }}

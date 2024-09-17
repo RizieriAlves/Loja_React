@@ -1,7 +1,7 @@
 {
   "itens": [
     {
-      "id": 1,
+      "id": "1",
       "categoria": "Lanches",
       "visible": true,
       "name": "Bacon Duplo",
@@ -10,7 +10,7 @@
       "descricao": "Pão americano, blend 150g, queijo cheddar, bacon duplo, alface, tomate e molho especial + 100g de batata."
     },
     {
-      "id": 2,
+      "id": "2",
       "categoria": "Lanches",
       "visible": false,
       "name": "Filé",
@@ -19,7 +19,7 @@
       "descricao": "Pão americano, 200g Filé Mignon, ovo, queijo cheddar duplo, bacon, alface, tomate e molho especial + 100g de batata."
     },
     {
-      "id": 3,
+      "id": "3",
       "categoria": "Lanches",
       "visible": true,
       "name": "Supremo",
@@ -28,7 +28,7 @@
       "descricao": "Pão americano, blend 150g, frango, queijo cheddar, bacon, alface, cebola, tomate e molho especial + 100g de batata."
     },
     {
-      "id": 4,
+      "id": "4",
       "categoria": "Lanches",
       "visible": true,
       "name": "Veggie",
@@ -37,7 +37,7 @@
       "descricao": "Pão integral, hambúrguer de grão-de-bico, queijo vegano, alface, tomate e molho especial + 100g de batata."
     },
     {
-      "id": 8,
+      "id": "8",
       "categoria": "Refrigerantes",
       "visible": true,
       "name": "Coca-Cola 350ml",
@@ -46,7 +46,7 @@
       "descricao": "Refrigerante de Cola, trincando de gelado."
     },
     {
-      "id": 10,
+      "id": "10",
       "categoria": "Refrigerantes",
       "visible": true,
       "name": "Guaraná antarctica 350ml",
@@ -55,7 +55,7 @@
       "descricao": "O guaraná mais famoso do Brasil, trincando de gelado."
     },
     {
-      "id": 11,
+      "id": "11",
       "categoria": "Refrigerantes",
       "visible": true,
       "name": "Fanta Laranja 350ml",
@@ -64,7 +64,7 @@
       "descricao": "Refrigerante sabor laranja, refrescante e delicioso."
     },
     {
-      "id": 12,
+      "id": "12",
       "categoria": "Sobremesas",
       "visible": true,
       "name": "Brownie",
@@ -73,7 +73,7 @@
       "descricao": "Delicioso brownie de chocolate com nozes."
     },
     {
-      "id": 13,
+      "id": "13",
       "categoria": "Sobremesas",
       "visible": true,
       "name": "Cheesecake",
@@ -82,7 +82,7 @@
       "descricao": "Cheesecake cremoso com calda de frutas vermelhas."
     },
     {
-      "id": 14,
+      "id": "14",
       "categoria": "Aperitivos",
       "visible": true,
       "name": "Nachos",
@@ -91,7 +91,7 @@
       "descricao": "Tortilhas de milho com queijo derretido e guacamole."
     },
     {
-      "id": 15,
+      "id": "15",
       "categoria": "Aperitivos",
       "visible": true,
       "name": "Aipim Frito",
@@ -100,9 +100,9 @@
       "descricao": "Aipim crocante frito, servido com molho picante."
     }
   ],
-  "pedidos": [
+  "now": [
     {
-      "id": 1,
+      "id": "1",
       "exclusive_id": 1724797099143,
       "cliente": {
         "nome": "Vinicius Rizieri Alves",
@@ -180,39 +180,127 @@
     },
     {
       "id": 1,
-      "exclusive_id": 1724799984064,
+      "exclusive_id": 1726542885306,
       "cliente": {
-        "nome": "Vinicius'",
-        "telefone": "1788885555",
+        "nome": "Juliano",
+        "telefone": "1478590022",
         "cidade": "São José do Rio Preto",
-        "bairro": "Parque Industrial ",
-        "Rua": "Rua PRofessor",
-        "Numero": "555"
+        "bairro": "Boa vista",
+        "Rua": "Rua Pedro Amaral",
+        "Numero": "423"
       },
       "pedido": {
-        "preco": 90,
-        "troco": 100,
+        "preco": 220,
+        "troco": 0,
         "itens": [
           {
-            "id": 1,
+            "id": "1",
             "categoria": "Lanches",
             "name": "Bacon Duplo",
-            "price": 30
+            "price": 30,
+            "payment": "debito"
           },
           {
-            "id": 3,
+            "id": "1",
             "categoria": "Lanches",
-            "name": "Supremo",
-            "price": 32
+            "name": "Bacon Duplo",
+            "price": 30,
+            "payment": "debito"
           },
           {
-            "id": 4,
+            "id": "10",
+            "categoria": "Refrigerantes",
+            "name": "Guaraná antarctica 350ml",
+            "price": 4,
+            "payment": "debito"
+          },
+          {
+            "id": "10",
+            "categoria": "Refrigerantes",
+            "name": "Guaraná antarctica 350ml",
+            "price": 4,
+            "payment": "debito"
+          },
+          {
+            "id": "4",
             "categoria": "Lanches",
             "name": "Veggie",
-            "price": 28
+            "price": 28,
+            "payment": "debito"
+          },
+          {
+            "id": "4",
+            "categoria": "Lanches",
+            "name": "Veggie",
+            "price": 28,
+            "payment": "debito"
+          },
+          {
+            "id": "4",
+            "categoria": "Lanches",
+            "name": "Veggie",
+            "price": 28,
+            "payment": "debito"
+          },
+          {
+            "id": "12",
+            "categoria": "Sobremesas",
+            "name": "Brownie",
+            "price": 8,
+            "payment": "debito"
+          },
+          {
+            "id": "12",
+            "categoria": "Sobremesas",
+            "name": "Brownie",
+            "price": 8,
+            "payment": "debito"
+          },
+          {
+            "id": "12",
+            "categoria": "Sobremesas",
+            "name": "Brownie",
+            "price": 8,
+            "payment": "debito"
+          },
+          {
+            "id": "12",
+            "categoria": "Sobremesas",
+            "name": "Brownie",
+            "price": 8,
+            "payment": "debito"
+          },
+          {
+            "id": "12",
+            "categoria": "Sobremesas",
+            "name": "Brownie",
+            "price": 8,
+            "payment": "debito"
+          },
+          {
+            "id": "12",
+            "categoria": "Sobremesas",
+            "name": "Brownie",
+            "price": 8,
+            "payment": "debito"
+          },
+          {
+            "id": "13",
+            "categoria": "Sobremesas",
+            "name": "Cheesecake",
+            "price": 10,
+            "payment": "debito"
+          },
+          {
+            "id": "13",
+            "categoria": "Sobremesas",
+            "name": "Cheesecake",
+            "price": 10,
+            "payment": "debito"
           }
         ]
       }
     }
-  ]
+  ],
+  "history": []
 }

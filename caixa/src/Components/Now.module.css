@@ -1,0 +1,13 @@
+.pedido {
+  background-color: azure;
+  border: 2px solid black;
+  font-size: 1.5em;
+  width: 30%;
+  min-width: 300px;
+  padding: 30px;
+}
+
+.pedidos {
+  display: flex;
+  gap: 30px;
+}

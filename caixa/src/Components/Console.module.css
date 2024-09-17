@@ -1,0 +1,25 @@
+.container {
+  width: 50%;
+  display: flex;
+  background-color: cornflowerblue;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 30px auto;
+  border: 2px solid darkcyan;
+}
+
+.active {
+  background-color: darkcyan;
+  border: 2px solid cornflowerblue;
+  border-radius: 15px;
+  padding: 20px;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.navlink {
+  flex-grow: 1;
+  text-align: center;
+  padding: 20px;
+}
