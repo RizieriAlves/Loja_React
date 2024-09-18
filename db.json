@@ -102,205 +102,40 @@
   ],
   "now": [
     {
-      "id": "1",
-      "exclusive_id": 1724797099143,
+      "id": null,
+      "exclusive_id": 1726618608414,
       "cliente": {
-        "nome": "Vinicius Rizieri Alves",
-        "telefone": "17996287444",
-        "cidade": "São José do Rio Preto",
-        "bairro": "Parque Industrial",
-        "Rua": "Professor Alvaro Duarte de Almeida",
-        "Numero": "745"
+        "nome": "a",
+        "telefone": "(11)29955-5555",
+        "cidade": "fasdf",
+        "bairro": "adfsa",
+        "Rua": "asdfa",
+        "Numero": "afdsa"
       },
       "pedido": {
-        "preco": 213,
-        "itens": [
-          {
-            "id": 4,
-            "categoria": "Lanches",
-            "name": "Veggie",
-            "price": 28
-          },
-          {
-            "id": 4,
-            "categoria": "Lanches",
-            "name": "Veggie",
-            "price": 28
-          },
-          {
-            "id": 1,
-            "categoria": "Lanches",
-            "name": "Bacon Duplo",
-            "price": 30
-          },
-          {
-            "id": 8,
-            "categoria": "Refrigerantes",
-            "name": "Coca-Cola 350ml",
-            "price": 5
-          },
-          {
-            "id": 4,
-            "categoria": "Lanches",
-            "name": "Veggie",
-            "price": 28
-          },
-          {
-            "id": 4,
-            "categoria": "Lanches",
-            "name": "Veggie",
-            "price": 28
-          },
-          {
-            "id": 4,
-            "categoria": "Lanches",
-            "name": "Veggie",
-            "price": 28
-          },
-          {
-            "id": 4,
-            "categoria": "Lanches",
-            "name": "Veggie",
-            "price": 28
-          },
-          {
-            "id": 8,
-            "categoria": "Refrigerantes",
-            "name": "Coca-Cola 350ml",
-            "price": 5
-          },
-          {
-            "id": 8,
-            "categoria": "Refrigerantes",
-            "name": "Coca-Cola 350ml",
-            "price": 5
-          }
-        ]
-      }
-    },
-    {
-      "id": 1,
-      "exclusive_id": 1726542885306,
-      "cliente": {
-        "nome": "Juliano",
-        "telefone": "1478590022",
-        "cidade": "São José do Rio Preto",
-        "bairro": "Boa vista",
-        "Rua": "Rua Pedro Amaral",
-        "Numero": "423"
-      },
-      "pedido": {
-        "preco": 220,
+        "preco": 0,
         "troco": 0,
-        "itens": [
-          {
-            "id": "1",
-            "categoria": "Lanches",
-            "name": "Bacon Duplo",
-            "price": 30,
-            "payment": "debito"
-          },
-          {
-            "id": "1",
-            "categoria": "Lanches",
-            "name": "Bacon Duplo",
-            "price": 30,
-            "payment": "debito"
-          },
-          {
-            "id": "10",
-            "categoria": "Refrigerantes",
-            "name": "Guaraná antarctica 350ml",
-            "price": 4,
-            "payment": "debito"
-          },
-          {
-            "id": "10",
-            "categoria": "Refrigerantes",
-            "name": "Guaraná antarctica 350ml",
-            "price": 4,
-            "payment": "debito"
-          },
-          {
-            "id": "4",
-            "categoria": "Lanches",
-            "name": "Veggie",
-            "price": 28,
-            "payment": "debito"
-          },
-          {
-            "id": "4",
-            "categoria": "Lanches",
-            "name": "Veggie",
-            "price": 28,
-            "payment": "debito"
-          },
-          {
-            "id": "4",
-            "categoria": "Lanches",
-            "name": "Veggie",
-            "price": 28,
-            "payment": "debito"
-          },
-          {
-            "id": "12",
-            "categoria": "Sobremesas",
-            "name": "Brownie",
-            "price": 8,
-            "payment": "debito"
-          },
-          {
-            "id": "12",
-            "categoria": "Sobremesas",
-            "name": "Brownie",
-            "price": 8,
-            "payment": "debito"
-          },
-          {
-            "id": "12",
-            "categoria": "Sobremesas",
-            "name": "Brownie",
-            "price": 8,
-            "payment": "debito"
-          },
-          {
-            "id": "12",
-            "categoria": "Sobremesas",
-            "name": "Brownie",
-            "price": 8,
-            "payment": "debito"
-          },
-          {
-            "id": "12",
-            "categoria": "Sobremesas",
-            "name": "Brownie",
-            "price": 8,
-            "payment": "debito"
-          },
-          {
-            "id": "12",
-            "categoria": "Sobremesas",
-            "name": "Brownie",
-            "price": 8,
-            "payment": "debito"
-          },
-          {
-            "id": "13",
-            "categoria": "Sobremesas",
-            "name": "Cheesecake",
-            "price": 10,
-            "payment": "debito"
-          },
-          {
-            "id": "13",
-            "categoria": "Sobremesas",
-            "name": "Cheesecake",
-            "price": 10,
-            "payment": "debito"
-          }
-        ]
+        "itens": []
       }
     }
   ],
-  "history": []
+  "history": [
+    {
+      "id": null,
+      "exclusive_id": 1726618608414,
+      "cliente": {
+        "nome": "a",
+        "telefone": "(11)29955-5555",
+        "cidade": "fasdf",
+        "bairro": "adfsa",
+        "Rua": "asdfa",
+        "Numero": "afdsa"
+      },
+      "pedido": {
+        "preco": 0,
+        "troco": 0,
+        "itens": []
+      }
+    }
+  ]
 }

@@ -2,6 +2,8 @@ import styles from "./components.css/checkout.module.css";
 import { FaRegTrashCan } from "react-icons/fa6";
 import { useState } from "react";
 import Troco from "./Troco";
+import { useNavigate } from "react-router-dom";
+
 function Checkout({
   itens,
   setItens,
@@ -32,14 +34,29 @@ function Checkout({
   const [num, setNum] = useState(0);
   const [pagamento, setPagamento] = useState("");
   const [troco, setTroco] = useState(0);
-  async function concluirpedido(e) {
-    e.preventDefault();
+  const navigate = useNavigate();
 
-    let response = await fetch("http://localhost:5000/now/");
+  if (cart.length == 0) {
+    setqtdItens(0);
+    navigate("/");
+  }
+
+  function validade(e) {
+    e.preventDefault();
+    if (cart.length == 0) {
+      alert("Carrinho vazio, você será redirecionado para o carrinho");
+      navigate("/");
+    }
+
+    concluirpedido();
+  }
+
+  async function concluirpedido() {
+    let response = await fetch("http://localhost:5000/history/");
     let pedidos = await response.json();
 
-    let ids = await Object.keys(pedidos).map(Number);
-    let next_Id = (await Math.max(...ids)) + 1;
+    let ids = Object.keys(pedidos).map(Number);
+    let next_Id = (Math.max(...ids) || 0) + 1;
 
     const pedidoID = Date.now();
     const pedido = {
@@ -67,6 +84,11 @@ function Checkout({
     };
 
     await fetch("http://localhost:5000/now/", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(pedido),
+    });
+    await fetch("http://localhost:5000/history/", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(pedido),
@@ -102,7 +124,7 @@ function Checkout({
       </div>
       <div className={styles.form}>
         <h1>Concluir pedido</h1>
-        <form onSubmit={concluirpedido}>
+        <form onSubmit={validade}>
           <h2>Dados pessoais</h2>
           <label>
             Nome:{" "}
@@ -110,6 +132,7 @@ function Checkout({
               type="text"
               name="nome"
               id="nome"
+              required
               placeholder="Digite seu Nome"
               onChange={(e) => {
                 setName(e.target.value);
@@ -122,9 +145,22 @@ function Checkout({
               type="tel"
               name="telefone"
               id="telefone"
-              placeholder="(DDD)Telefone"
+              required
+              max-length="14"
+              value={tel}
+              placeholder="(00)00000-0000"
               onChange={(e) => {
-                setTel(e.target.value);
+                let telefone = e.target.value.replace(/\D/g, "");
+                if (telefone.length > 0) {
+                  telefone = "(" + telefone;
+                }
+                if (telefone.length > 3) {
+                  telefone = telefone.slice(0, 3) + ")" + telefone.slice(3);
+                }
+                if (telefone.length > 8) {
+                  telefone = telefone.slice(0, 9) + "-" + telefone.slice(9);
+                }
+                setTel(telefone);
               }}
             />
           </label>
@@ -135,6 +171,7 @@ function Checkout({
               type="text"
               name="Cidade"
               id="Cidade"
+              required
               placeholder="Digite sua Cidade"
               onChange={(e) => {
                 setCidade(e.target.value);
@@ -147,6 +184,7 @@ function Checkout({
               type="text"
               name="Bairro"
               id="Bairro"
+              required
               placeholder="Digite seu Bairro"
               onChange={(e) => {
                 setBairro(e.target.value);
@@ -159,6 +197,7 @@ function Checkout({
               type="text"
               name="Rua"
               id="Rua"
+              required
               placeholder="Digite sua Rua"
               onChange={(e) => {
                 setRua(e.target.value);
@@ -171,6 +210,8 @@ function Checkout({
               type="text"
               name="Numero"
               id="Numero"
+              max-length="5"
+              required
               placeholder="Digite o Numero"
               onChange={(e) => {
                 setNum(e.target.value);
@@ -183,10 +224,12 @@ function Checkout({
             <select
               name="pagamento"
               id="pagamento"
+              required
               onChange={(e) => {
                 setPagamento(e.target.value);
               }}
             >
+              <option value="" selected disabled></option>
               <option value="credito">Cartão de crédito</option>
               <option value="debito">Cartão de Débito</option>
               <option value="pix">Pix QR Code</option>
