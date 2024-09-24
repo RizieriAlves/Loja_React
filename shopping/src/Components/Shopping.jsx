@@ -1,19 +1,22 @@
 import React from "react";
 import styles from "./components.css/shopping.module.css"; // Importa o objeto de estilos;
 import Categorias from "./Categorias";
-import { useEffect } from "react";
+import { useEffect, useContext } from "react";
 import Carrinho from "./Carrinho";
 import { Link } from "react-router-dom";
-function Shopping({
-  itens,
-  setItens,
-  cart,
-  setCart,
-  price,
-  setPrice,
-  qtdItens,
-  setqtdItens,
-}) {
+import { CartContext } from "../Context/CartContext";
+function Shopping() {
+  const {
+    itens,
+    setItens,
+    cart,
+    setCart,
+    price,
+    setPrice,
+    qtdItens,
+    setqtdItens,
+  } = useContext(CartContext);
+
   function AddtoCart(produto) {
     var carrinho = cart.slice();
     carrinho.push(produto);
@@ -50,13 +53,8 @@ function Shopping({
       />
 
       {qtdItens > 0 && (
-        <Link to="/checkout" state={{ cart, price }}>
-          <Carrinho
-            totalprice={price}
-            qtditens={qtdItens}
-            cart_itens={cart}
-            setCart={setCart}
-          />
+        <Link to="/checkout">
+          <Carrinho />
         </Link>
       )}
     </div>

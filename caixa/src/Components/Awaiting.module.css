@@ -1,0 +1,30 @@
+.pedidos {
+  background-color: darkkhaki;
+  padding: 50px;
+}
+
+.pedidos > div {
+  background-color: white;
+  width: 40%;
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 15px;
+}
+
+.pedidos > div button {
+  padding: 20px;
+  font-size: 1.3em;
+}
+
+.pedidos > div button:first-child {
+  background-color: greenyellow;
+}
+
+.pedidos > div button:last-child {
+  background-color: rgb(252, 55, 55);
+}
+
+.actions {
+  display: flex;
+  justify-content: space-evenly;
+}

@@ -100,9 +100,72 @@
       "descricao": "Aipim crocante frito, servido com molho picante."
     }
   ],
+  "awaiting": [],
   "now": [
     {
-      "id": null,
+      "id": "1",
+      "exclusive_id": 1727137674815,
+      "cliente": {
+        "nome": "Vinicius Rizieri teste",
+        "telefone": "(17)99628-4455",
+        "cidade": "São José do Rio Preto",
+        "bairro": "Boa vista",
+        "Rua": "Rua Pedro Amaral",
+        "Numero": "140"
+      },
+      "pedido": {
+        "preco": 102,
+        "troco": 0,
+        "itens": [
+          {
+            "id": "1",
+            "categoria": "Lanches",
+            "name": "Bacon Duplo",
+            "price": 30,
+            "payment": "credito"
+          },
+          {
+            "id": "3",
+            "categoria": "Lanches",
+            "name": "Supremo",
+            "price": 32,
+            "payment": "credito"
+          },
+          {
+            "id": "4",
+            "categoria": "Lanches",
+            "name": "Veggie",
+            "price": 28,
+            "payment": "credito"
+          },
+          {
+            "id": "10",
+            "categoria": "Refrigerantes",
+            "name": "Guaraná antarctica 350ml",
+            "price": 4,
+            "payment": "credito"
+          },
+          {
+            "id": "10",
+            "categoria": "Refrigerantes",
+            "name": "Guaraná antarctica 350ml",
+            "price": 4,
+            "payment": "credito"
+          },
+          {
+            "id": "10",
+            "categoria": "Refrigerantes",
+            "name": "Guaraná antarctica 350ml",
+            "price": 4,
+            "payment": "credito"
+          }
+        ]
+      }
+    }
+  ],
+  "history": [
+    {
+      "id": "0",
       "exclusive_id": 1726618608414,
       "cliente": {
         "nome": "a",
@@ -117,24 +180,65 @@
         "troco": 0,
         "itens": []
       }
-    }
-  ],
-  "history": [
+    },
     {
-      "id": null,
-      "exclusive_id": 1726618608414,
+      "id": "1",
+      "exclusive_id": 1727137674815,
       "cliente": {
-        "nome": "a",
-        "telefone": "(11)29955-5555",
-        "cidade": "fasdf",
-        "bairro": "adfsa",
-        "Rua": "asdfa",
-        "Numero": "afdsa"
+        "nome": "Vinicius Rizieri teste",
+        "telefone": "(17)99628-4455",
+        "cidade": "São José do Rio Preto",
+        "bairro": "Boa vista",
+        "Rua": "Rua Pedro Amaral",
+        "Numero": "140"
       },
       "pedido": {
-        "preco": 0,
+        "preco": 102,
         "troco": 0,
-        "itens": []
+        "itens": [
+          {
+            "id": "1",
+            "categoria": "Lanches",
+            "name": "Bacon Duplo",
+            "price": 30,
+            "payment": "credito"
+          },
+          {
+            "id": "3",
+            "categoria": "Lanches",
+            "name": "Supremo",
+            "price": 32,
+            "payment": "credito"
+          },
+          {
+            "id": "4",
+            "categoria": "Lanches",
+            "name": "Veggie",
+            "price": 28,
+            "payment": "credito"
+          },
+          {
+            "id": "10",
+            "categoria": "Refrigerantes",
+            "name": "Guaraná antarctica 350ml",
+            "price": 4,
+            "payment": "credito"
+          },
+          {
+            "id": "10",
+            "categoria": "Refrigerantes",
+            "name": "Guaraná antarctica 350ml",
+            "price": 4,
+            "payment": "credito"
+          },
+          {
+            "id": "10",
+            "categoria": "Refrigerantes",
+            "name": "Guaraná antarctica 350ml",
+            "price": 4,
+            "payment": "credito"
+          }
+        ]
       }
     }
   ]

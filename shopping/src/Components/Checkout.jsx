@@ -1,19 +1,14 @@
 import styles from "./components.css/checkout.module.css";
 import { FaRegTrashCan } from "react-icons/fa6";
-import { useState } from "react";
+import { useState, useContext } from "react";
 import Troco from "./Troco";
 import { useNavigate } from "react-router-dom";
+import { CartContext } from "../Context/CartContext";
 
-function Checkout({
-  itens,
-  setItens,
-  cart,
-  setCart,
-  price,
-  setPrice,
-  qtdItens,
-  setqtdItens,
-}) {
+function Checkout() {
+  const { cart, setCart, price, setPrice, setqtdItens } =
+    useContext(CartContext);
+
   async function removeItem(index) {
     const array = [...cart];
     array.splice(index, 1);
@@ -57,6 +52,7 @@ function Checkout({
 
     let ids = Object.keys(pedidos).map(Number);
     let next_Id = (Math.max(...ids) || 0) + 1;
+    next_Id = next_Id.toString();
 
     const pedidoID = Date.now();
     const pedido = {
@@ -83,12 +79,7 @@ function Checkout({
       },
     };
 
-    await fetch("http://localhost:5000/now/", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(pedido),
-    });
-    await fetch("http://localhost:5000/history/", {
+    await fetch("http://localhost:5000/awaiting/", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(pedido),
